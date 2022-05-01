@@ -20,7 +20,11 @@ alert(`${fox1.replace('the lazy dog', fln)}`)
 let wrd = prompt(`enter a word from: ${fox1}`)
 alert(`${fox1.search(wrd)}`)
 //STEP 8
-
+let old_string = 'The quick brown fox jumps over the lazy dog'
+let new_string = old_string.slice(old_string.lastIndexOf('the'), old_string.length).toUpperCase()
+alert(new_string)
 //STEP 9
-
+let str = '            THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG          '
+alert(str.trim().toLowerCase())
 //STEP 10
+alert(old_string.replace(/\b\w/g, l => l.toUpperCase()))
